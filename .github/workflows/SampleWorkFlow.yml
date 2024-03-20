@@ -1,6 +1,4 @@
-name: Sample Workflow
-#on: push
-#on: workflow_dispatch
+name: SampleWorkflow
 on: 
     schedule:
         - cron: '*/2 * * * *'
