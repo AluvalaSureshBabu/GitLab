@@ -6,4 +6,4 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-        - run: echo Hello, CronJob at 2mins!
+        - run: echo "Hello, CronJob at 2mins!"
