@@ -1,0 +1,10 @@
+name: Sample Workflow
+#on: push
+#on: workflow_dispatch
+on: schedule:
+    - cron: "*/2 * * * *" 
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo Hello, CronJob at 2mins!
