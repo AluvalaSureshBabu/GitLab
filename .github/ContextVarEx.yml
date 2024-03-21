@@ -1,4 +1,4 @@
-name: ContextVariableExample
+name: ContextGitVariableExample
 on: workflow_dispatch
 env:
   localvar: ${{vars.test.TEST_VAR1}}
