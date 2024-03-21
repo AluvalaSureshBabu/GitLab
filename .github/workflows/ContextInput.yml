@@ -1,0 +1,14 @@
+name: ContextExample
+on: 
+    workflow_dispatch:
+        inputs:
+            name:
+                type: string
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Display Event Information
+          run: |
+            echo "Github EventName: ${{github.event_name}}"
+            echo "Entered Input Name: $${{inputs.name}}"

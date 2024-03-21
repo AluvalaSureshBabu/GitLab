@@ -1,0 +1,20 @@
+name: ContextExample
+on: workflow_dispatch
+env:
+    MY_VAR1: Global var1
+    MY_VAR2: Global var2
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Display Event Information
+          env:
+            MY_VAR1: step variable1
+            MY_VAR2: step variable2
+          run: |
+            echo "Github EventName: ${{env.MY_VAR1}}"
+            echo "Ref: ${{env.MY_VAR2}}"
+        - name: Display Event Info2
+          run: |
+            echo "Global var1: ${{env.MY_VAR1}}"
+            echo "Global var2: ${{env.MY_VAR2}}"
