@@ -1,0 +1,10 @@
+name: ContextVariableExample
+on: workflow_dispatch
+env:
+  localvar: ${{vars.test.TEST_VAR1}}
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Display Context Variable Information
+          run: echo "Context Variable : ${{env.localvar}}"
