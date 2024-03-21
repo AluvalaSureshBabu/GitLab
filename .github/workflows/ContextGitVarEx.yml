@@ -1,10 +1,11 @@
 name: ContextGitHubVariableExample
 on: workflow_dispatch
 env:
-  localvar: ${{vars.test.TEST_VAR1}}
+  localvar: ${{vars.TEST_VAR1}}
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
+    environment: test
     steps:
         - name: Display Context Variable Information
           run: |
