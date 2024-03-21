@@ -1,0 +1,16 @@
+name: ContextExample
+on: workflow_dispatch
+#    schedule:
+#        - cron: '*/2 * * * *'
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Display Event Information
+          run: |
+            echo "Github EventName: ${{github.event_name}}"
+            echo "Ref: ${{github.ref}}"
+            echo "SHA: ${{github.sha}}"
+            echo "Workflow: ${{github.workflow}}"
+            echo "Actor: ${{github.actor}}"
+            echo "RunID: ${{github.run_id}}"
