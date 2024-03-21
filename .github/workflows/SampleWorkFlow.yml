@@ -1,7 +1,7 @@
 name: SampleWorkflow
-on: 
-    schedule:
-        - cron: '*/2 * * * *'
+on: workflow_dispatch
+#    schedule:
+#        - cron: '*/2 * * * *'
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
