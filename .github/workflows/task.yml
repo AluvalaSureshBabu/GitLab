@@ -15,3 +15,8 @@ jobs:
             java-version: '21'
         - name: buid 
           run: mvn install
+        - name: artifact-upload
+          uses: actions/upload-artifact@v4
+          with:
+            name: todo-artifact
+            path: target/
