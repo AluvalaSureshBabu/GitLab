@@ -1,4 +1,4 @@
-name: ContextExample
+name: ContextInputExample
 on: 
     workflow_dispatch:
         inputs:
