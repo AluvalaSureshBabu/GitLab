@@ -1,4 +1,4 @@
-name: Release
+name: ReleaseExercise
 
 on:
   workflow_dispatch:
