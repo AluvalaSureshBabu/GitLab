@@ -10,5 +10,5 @@ jobs:
 
     - name: "my step"
       run: |
-         chmod +x ../../init.sh
+         chmod +x ./init.sh
          ./init.sh
