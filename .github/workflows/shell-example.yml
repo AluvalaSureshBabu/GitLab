@@ -5,7 +5,10 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: "my step"
-        run: |
+    - name: "checkout repo"
+      uses: actions/checkout@v4
+
+    - name: "my step"
+      run: |
          chmod +x ../../init.sh
          ./init.sh
